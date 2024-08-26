@@ -1,14 +1,14 @@
-.cabecalho {
+.cabecalho{
     background-color: crimson;
     color: black;
     display: flex;
     padding: 24px 0;
 }
 
-.section1 {
+.section1{
     background-color: black;
 }
 
-.section2 {
+.section2{
     background-color: blue;
 }
