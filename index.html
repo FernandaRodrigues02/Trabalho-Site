@@ -3,71 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Exemplo</title>
+    <title>Brownies Delícia</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="caminho/para/imagem-cabecalho.jpg" alt="Imagem Grande Cabeçalho" class="header-image">
-        <h1 class="store-name">Nome da Loja</h1>
+        <div class="header-content">
+            <img src="caminho/para/imagem-cabecalho.jpg" alt="Brownies Delícia" class="header-image">
+            <h1>Brownies Delícia</h1>
+            <p>Os melhores brownies que você já experimentou!</p>
+        </div>
     </header>
-    
-    <main>
-        <section class="product-gallery">
-            <article class="product-item">
-                <img src="caminho/para/imagem-produto1.jpg" alt="Produto 1" class="product-image">
-                <div class="product-description">
-                    <h2 class="product-name">Produto 1</h2>
-                    <p>Descrição do produto 1. Esta é uma breve descrição do produto, destacando suas principais características e benefícios.</p>
-                </div>
-            </article>
-            
-            <article class="product-item">
-                <img src="caminho/para/imagem-produto2.jpg" alt="Produto 2" class="product-image">
-                <div class="product-description">
-                    <h2 class="product-name">Produto 2</h2>
-                    <p>Descrição do produto 2. Esta é uma breve descrição do produto, destacando suas principais características e benefícios.</p>
-                </div>
-            </article>
 
-            <!-- Adicione mais produtos conforme necessário -->
+    <main>
+        <section class="about">
+            <h2>Sobre Nós</h2>
+            <p>Na Brownies Delícia, dedicamo-nos a criar brownies irresistíveis com ingredientes de alta qualidade. Nossos brownies são feitos com amor e atenção aos detalhes para garantir uma experiência doce e deliciosa em cada mordida.</p>
+        </section>
+
+        <section class="product-gallery">
+            <h2>Nossos Brownies</h2>
+            <div class="gallery">
+                <article class="product-item">
+                    <img src="caminho/para/imagem-brownie1.jpg" alt="Brownie Clássico" class="product-image">
+                    <div class="product-description">
+                        <h3>Brownie Clássico</h3>
+                        <p>O brownie clássico com uma textura rica e úmida, feito com chocolate de alta qualidade.</p>
+                    </div>
+                </article>
+
+                <article class="product-item">
+                    <img src="caminho/para/imagem-brownie2.jpg" alt="Brownie de Nozes" class="product-image">
+                    <div class="product-description">
+                        <h3>Brownie de Nozes</h3>
+                        <p>Brownie delicioso com nozes crocantes e um toque de chocolate extra.</p>
+                    </div>
+                </article>
+
+                <article class="product-item">
+                    <img src="caminho/para/imagem-brownie3.jpg" alt="Brownie de Caramelo" class="product-image">
+                    <div class="product-description">
+                        <h3>Brownie de Caramelo</h3>
+                        <p>Brownie recheado com caramelo cremoso e uma camada de chocolate derretido por cima.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contato</h2>
+            <p>Tem alguma dúvida ou deseja fazer um pedido? Entre em contato conosco:</p>
+            <ul>
+                <li>Email: contato@browniesdelicia.com</li>
+                <li>Telefone: (11) 1234-5678</li>
+            </ul>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Brownies Delícia. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
-/* Reset básico para evitar problemas com o estilo padrão dos navegadores */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
+    background: #f8b400;
+    color: #fff;
     text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .header-image {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-.store-name {
-    margin-top: 10px;
-    font-size: 2em;
-    color: #333;
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 20px 0 10px;
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 main {
     padding: 20px;
 }
 
-.product-gallery {
+.about, .product-gallery, .contact {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #f8b400;
+    margin-bottom: 20px;
+}
+
+.gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -76,30 +127,53 @@ main {
 
 .product-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    max-width: 600px;
+    max-width: 300px;
     width: 100%;
+    background: #fff;
+    text-align: center;
 }
 
 .product-image {
-    max-width: 200px;
+    width: 100%;
     height: auto;
 }
 
 .product-description {
     padding: 15px;
-    flex: 1;
 }
 
-.product-name {
+.product-description h3 {
     font-size: 1.5em;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .product-description p {
     font-size: 1em;
     color: #666;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 0.9em;
 }
