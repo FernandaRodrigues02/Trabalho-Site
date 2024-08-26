@@ -1,12 +1,12 @@
 .cabecalho{
-    background-color:antiquewhite;
-    color:white;
+    background-color:darkcyan;
+    color:black;
     display: flex;
     padding: 24px 0;
 }
 
 .section1 {
-    background-color:darkcyan;
+    background-color:bisque;
 }
 
 .section2 {
